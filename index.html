@@ -120,6 +120,65 @@
         </div>
       </div>
     </section>
+    <section id="reviews">
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <div>⭐️⭐️⭐️⭐️⭐️</div>
+          <q
+            >A life changing app! I was recently unfrozen from a freak liquid
+            nitrogen accident in 1941. Not only is the war over, but now I can
+            set up a potluck without having to personally call and remind the
+            guests! I also don’t have to invite Betty, who stole my husband in
+            1939.”</q
+          >
+          <p class="author">-Bernadette Collins</p>
+        </div>
+
+        <div class="mySlides">
+          <div>⭐️⭐️⭐️⭐️</div>
+          <q
+            >“I like that the app doesn’t have a comments section. People are
+            too rude on the internet today. If I don’t think you’ll bring a good
+            pie to the potluck, I’ll gossip the old fashioned way… behind your
+            back!”</q
+          >
+          <p class="author">- Jenny Jiao</p>
+        </div>
+
+        <div class="mySlides">
+          <div>⭐️⭐️</div>
+          <q>
+            “I prefer it when potlucks go wrong. Some might call me “messy” or
+            “dramatic” but a potluck when everybody brings salad? Can you say
+            juicy?? Anyways thanks to this app all my friend’s potlucks are
+            pulled off without a hitch. Would not recommend it.”</q
+          >
+          <p class="author">- Antonio Ruiz</p>
+        </div>
+
+        <div class="mySlides">
+          <div>⭐️⭐️⭐️⭐️⭐️</div>
+          <q>
+            “I was granted immortality in exchange for having to throw a potluck
+            once a week in a sort of monkey’s paw situation. It used to be
+            ironic because it would take me a whole week just to plan each
+            potluck. Thanks to this app, I have more time to enjoy my
+            immortality!”</q
+          >
+          <p class="author">- Alana Kahale</p>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </section>
 
     <section>
       <div class="play">
@@ -165,5 +224,38 @@
         <p>&copy 2020</p>
       </div>
     </footer>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
   </body>
 </html>
