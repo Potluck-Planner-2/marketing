@@ -1,35 +1,138 @@
-/*features*/
-.features {
+/*history*/
+#history {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 20px 0;
 
-  .card {
-    width: 70%;
-    padding-bottom: 25px;
-    max-width: 400px;
+  .history-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
 
-    h3 {
-      font-size: 1.6rem;
-      font-family: "Fredericka the Great", cursive;
-      padding-bottom: 15px;
+    @media @tablet {
+      flex-direction: row;
+      justify-content: center;
     }
-  }
 
-  .icon {
-    font-size: 4rem;
-    color: #f0821b;
-  }
+    .history-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      align-items: center;
+      max-width: 1200px;
 
-  .card-info {
-    text-align: justify;
+      @media @tablet {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .history-img {
+        max-width: 400px;
+
+        @media @tablet {
+          // padding: 25px;
+        }
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 1.5%;
+        }
+      }
+
+      .history-details {
+        max-width: 400px;
+        width: 100%;
+        text-align: justify;
+        padding: 30px;
+        background-color: #f0821b;
+        color: #fefefb;
+        border-radius: 1.5%;
+
+        @media @tablet {
+          max-width: 400px;
+        }
+
+        h3 {
+          font-size: 1.5rem;
+          text-align: center;
+          padding-bottom: 15px;
+
+          @media @tablet {
+            font-size: 1.8rem;
+          }
+        }
+
+        p {
+          @media @tablet {
+            // font-size: 1.5rem;
+          }
+        }
+      }
+    }
   }
 }
 
+/*features*/
+#features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .features {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px 0;
+
+    @media @tablet {
+      flex-direction: row;
+      width: 80%;
+    }
+
+    .card {
+      width: 70%;
+      padding-bottom: 25px;
+      max-width: 400px;
+
+      @media @tablet {
+        width: 25%;
+        padding-left: 20px;
+      }
+
+      h3 {
+        font-size: 1.6rem;
+        font-family: "Fredericka the Great", cursive;
+        padding-bottom: 15px;
+
+        @media @tablet {
+          font-size: 1.8rem;
+        }
+      }
+
+      p {
+        @media @tablet {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .icon {
+      font-size: 4rem;
+      color: #f0821b;
+    }
+
+    .card-info {
+      text-align: justify;
+    }
+  }
+}
 /*play*/
 .play {
   width: 100%;
