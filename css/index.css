@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Mallanna", sans-serif;
+  color: #7c7b7b;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+}
+i {
+  cursor: pointer;
+}
+h1 {
+  font-size: 5.5rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+/*top nav*/
+.top-nav {
+  width: 100%;
+}
+.top-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 0;
+}
+.top-nav ul li {
+  padding: 8px;
+  font-size: 1.3rem;
+}
+/*features*/
+.features {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 0;
+}
+.features .card {
+  width: 70%;
+  padding-bottom: 25px;
+  max-width: 400px;
+}
+.features .card h3 {
+  font-size: 1.6rem;
+  font-family: "Fredericka the Great", cursive;
+  padding-bottom: 15px;
+}
+.features .icon {
+  font-size: 4rem;
+  color: #f0821b;
+}
+.features .card-info {
+  text-align: justify;
+}
+/*play*/
+.play {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #7c7b7b;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.play .play-container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fefefb;
+  padding-top: 40px;
+}
+.play .play-container button {
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  outline: none;
+  background-color: #fefefb;
+  border: #fefefb;
+  color: #fa8d26;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.play .play-container button:hover {
+  background-color: #fa8d26;
+  color: #fefefb;
+}
+.play .play-container h2 {
+  font-size: 2rem;
+  padding-top: 15px;
+}
+.play .play-container i {
+  font-size: 3rem;
+  padding: 10px;
+  color: #fefefb;
+}
+/*footer*/
+.footer-container {
+  width: 100%;
+  background-color: #7c7b7b;
+  color: #fefefb;
+  display: flex;
+  justify-content: center;
+}
+.footer-container div {
+  max-width: 400px;
+  display: flex;
+  flex-direction: row;
+}
+.footer-container div .social {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.footer-container div .social h4 {
+  font-size: 1.6rem;
+}
+.footer-container div .social i {
+  font-size: 1.6rem;
+  padding-top: 8px;
+}
+.footer-container div .footer-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.footer-container div .footer-nav h4 {
+  font-size: 1.6rem;
+}
+.footer-container div .footer-nav li {
+  font-size: 1.2rem;
+}
+.copyright {
+  background-color: #7c7b7b;
+  color: #fefefb;
+  text-align: center;
+  font-size: 1.2rem;
+}
+/*landing*/
+.bcg {
+  background: url("/imgs/bcg.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.bcg div {
+  width: 90%;
+  max-width: 400px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 25px;
+}
+.bcg h1 {
+  font-family: "Fredericka the Great", cursive;
+  color: #fefefb;
+  padding-bottom: 10px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.bcg hr {
+  width: 100%;
+  color: #fa8d26;
+}
+.bcg h2 {
+  color: #fefefb;
+  padding-bottom: 25px;
+  padding-top: 10px;
+  text-align: justify;
+}
+.bcg button {
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  outline: none;
+  background-color: #fa8d26;
+  border: #fa8d26;
+  color: #fefefb;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.bcg button:hover {
+  background-color: #f0821b;
+}
