@@ -241,7 +241,17 @@ h3 {
     font-size: 1.8rem;
   }
 }
+@media (min-width: 1000px) {
+  #history .history-container .history-flex .history-details h3 {
+    font-size: 2.2rem;
+  }
+}
 @media (min-width: 800px) {
+}
+@media (min-width: 1000px) {
+  #history .history-container .history-flex .history-details p {
+    font-size: 1.5rem;
+  }
 }
 /*features*/
 #features {
@@ -311,6 +321,154 @@ h3 {
 }
 #features .features .card-info {
   text-align: justify;
+}
+/*about sections*/
+.space {
+  height: 100vh;
+  background-color: #f4f5f6;
+}
+@media (min-width: 1000px) {
+  .space {
+    height: 55vh;
+  }
+}
+.about-main {
+  width: 100%;
+}
+.about-main .about-bcg {
+  width: 100%;
+  height: 60vh;
+  background-color: #fa8d26;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-main .about-bcg h1 {
+  color: #fff;
+  font-size: 6rem;
+  font-family: "Fredericka the Great", cursive;
+}
+.about-main .about-bcg .about-hero {
+  border-radius: 2%;
+  width: 90%;
+  max-width: 600px;
+  position: absolute;
+  top: 80%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1000px) {
+  .about-main .about-bcg .about-hero {
+    flex-direction: row;
+    max-width: 1200px;
+    height: 50vh;
+  }
+}
+.about-main .about-bcg .about-hero img {
+  border-radius: 0.5%;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+@media (min-width: 1000px) {
+  .about-main .about-bcg .about-hero img {
+    width: 50%;
+    height: auto;
+  }
+}
+.about-main .about-bcg .about-hero .ab-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+  background-color: #fff;
+  color: black;
+  border-radius: 0.5%;
+}
+@media (min-width: 1000px) {
+  .about-main .about-bcg .about-hero .ab-info {
+    height: auto;
+  }
+}
+.about-main .about-bcg .about-hero .ab-info h2 {
+  font-size: 3rem;
+}
+.about-main .about-bcg .about-hero .ab-info h4 {
+  font-size: 2rem;
+  padding: 20px 0;
+}
+.about-main .about-bcg .about-hero .ab-info p {
+  font-size: 1.6rem;
+}
+.team-main {
+  width: 100%;
+  background-color: #f4f5f6;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.team-main h2 {
+  font-size: 3rem;
+}
+.team-main h4 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.team-main .team-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .team-main .team-row {
+    flex-direction: row;
+  }
+}
+.team-main .team-row .team-card {
+  background: #fff;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  transform: rotate(2deg);
+  margin: 2rem auto;
+  transition: all 0.35s;
+}
+.team-main .team-row .team-card:nth-of-type(4n + 1) {
+  transform: rotate(2deg);
+}
+.team-main .team-row .team-card img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.join-main {
+  background: #fa8d26;
+  color: #fff;
+  padding-bottom: 5.5rem;
+  padding-top: 4rem;
+  text-align: center;
+}
+.join-main h2 {
+  font-size: 2rem;
+}
+.join-main h4 {
+  font-size: 1.6rem;
+}
+.join-main button {
+  margin-top: 10px;
+  padding: 1.5rem 4rem;
+  border-radius: 30px;
+  outline: none;
+  background-color: #fff;
+  border: #fff;
+  color: #fa8d26;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
 }
 /*footer*/
 #footer {
@@ -521,7 +679,7 @@ h3 {
     font-size: 1.4rem;
   }
 }
-/*landing*/
+/*landing home*/
 .bcg {
   background: url("/imgs/bcg.jpg") no-repeat center;
   background-size: cover;
