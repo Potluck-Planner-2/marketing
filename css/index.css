@@ -337,7 +337,7 @@ h3 {
 }
 .about-main .about-bcg {
   width: 100%;
-  height: 60vh;
+  height: 55vh;
   background-color: #fa8d26;
   position: relative;
   display: flex;
@@ -346,7 +346,7 @@ h3 {
 }
 .about-main .about-bcg h1 {
   color: #fff;
-  font-size: 6rem;
+  font-size: 4.8rem;
   font-family: "Fredericka the Great", cursive;
 }
 .about-main .about-bcg .about-hero {
@@ -405,6 +405,7 @@ h3 {
 .team-main {
   width: 100%;
   background-color: #f4f5f6;
+  color: black;
   text-align: center;
   padding-bottom: 100px;
 }
@@ -469,6 +470,127 @@ h3 {
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
+}
+/*contact*/
+.space2 {
+  height: 60vh;
+  background-color: #f4f5f6;
+}
+@media (min-width: 1000px) {
+  .space2 {
+    height: 45vh;
+  }
+}
+.contact-main {
+  width: 100%;
+}
+.contact-main .contact-heading {
+  width: 100%;
+  height: 55vh;
+  background-color: #fa8d26;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-main .contact-heading h1 {
+  color: #fff;
+  font-size: 4.8rem;
+  font-family: "Fredericka the Great", cursive;
+}
+.contact-main .contact-heading div {
+  width: 90%;
+  max-width: 60rem;
+}
+.contact-main .contact-heading div p {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #fff;
+}
+.contact-main .contact-heading .some-form {
+  border-radius: 2%;
+  background-color: #fff;
+  width: 90%;
+  max-width: 600px;
+  position: absolute;
+  top: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 20px;
+}
+@media (min-width: 1000px) {
+  .contact-main .contact-heading .some-form {
+    top: 75%;
+  }
+}
+.contact-main .contact-heading .some-form .field-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 2%;
+}
+.contact-main .contact-heading .some-form .field-text label {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+.contact-main .contact-heading .some-form .field-text input {
+  justify-content: center;
+  background-color: #e3e8eb;
+  border: 0.2rem solid #e3e8eb;
+  border-radius: 0.4rem;
+  box-shadow: none;
+  color: black;
+  height: 4.8rem;
+  outline: none;
+  padding-left: 1.6rem;
+  resize: none;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+.contact-main .contact-heading .some-form .field-text textarea {
+  height: 7.4rem;
+  line-height: 1.8rem;
+  padding-bottom: 1.2rem;
+  padding-right: 1.6rem;
+  padding-top: 1.2rem;
+  padding-left: 1.6rem;
+  background-color: #e3e8eb;
+  border: 0.2rem solid #e3e8eb;
+  border-radius: 0.4rem;
+  box-shadow: none;
+  color: black;
+  resize: none;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+.contact-main .contact-heading .some-form .field-text-btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+.contact-main .contact-heading .some-form .field-text-btn div {
+  width: 100%;
+}
+.contact-main .contact-heading .some-form .field-text-btn div button {
+  background-color: #fa8d26;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  height: 4.8rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 2.4rem;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  width: 100%;
+  margin-top: 1.8rem;
 }
 /*footer*/
 #footer {
