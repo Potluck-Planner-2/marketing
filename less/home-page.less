@@ -13,7 +13,7 @@
 
   div {
     width: 90%;
-    max-width: 400px;
+    max-width: 500px;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 25px;
   }
@@ -24,25 +24,43 @@
     padding-bottom: 10px;
     text-align: center;
     letter-spacing: 3px;
+    font-size: 6rem;
+
+    @media @tablet {
+      font-size: 6.2rem;
+    }
 
     @media @desktop {
-      font-size: 6.1rem;
+      font-size: 5.9rem;
     }
   }
 
   hr {
     width: 100%;
-    color: #fa8d26;
+    // max-width: 300px;
+    background-color: #fa8d26;
+    border: none;
+    height: 2px;
   }
 
   h2 {
     color: #fefefb;
     padding-bottom: 25px;
     padding-top: 10px;
-    text-align: justify;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+
+    @media @tablet {
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+    }
 
     @media @desktop {
       font-size: 1.6rem;
+      line-height: 2.4rem;
+      font-weight: 300;
     }
   }
 
