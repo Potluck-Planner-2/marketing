@@ -50,6 +50,7 @@ h3 {
 .top-nav ul li {
   padding: 8px;
   font-size: 1.3rem;
+  font-weight: 300;
 }
 @media (min-width: 800px) {
   .top-nav ul li {
@@ -59,6 +60,21 @@ h3 {
 @media (min-width: 1000px) {
   .top-nav ul li {
     font-size: 1.7rem;
+  }
+}
+.top-nav ul img {
+  width: 4rem;
+}
+@media (min-width: 800px) {
+  .top-nav ul img {
+    width: 6rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 1000px) {
+  .top-nav ul img {
+    width: 7rem;
   }
 }
 /*reviews*/
