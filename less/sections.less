@@ -16,14 +16,14 @@
 
     .mySlides {
       display: none;
-      padding: 80px 80px 30px 80px;
+      padding: 80px 80px 80px 80px;
       text-align: center;
       max-width: 1200px;
 
       .stars {
         color: #f5db3d;
         font-size: 1.4rem;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
 
         @media @tablet {
           font-size: 1.6rem;
@@ -31,6 +31,10 @@
 
         @media @desktop {
           font-size: 1.7rem;
+        }
+
+        i {
+          padding: 0 6px;
         }
       }
 
@@ -47,7 +51,8 @@
       }
 
       .author {
-        color: cornflowerblue;
+        color: #fa8d26;
+        padding-top: 10px;
         font-size: 1.4rem;
 
         @media @tablet {
@@ -89,6 +94,7 @@
 }
 
 .dot-container {
+  display: none;
   text-align: center;
   padding: 20px 20px 40px 20px;
   background: #fff;
@@ -120,79 +126,120 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   .history-container {
     max-width: 1200px;
+    height: 80vh;
     width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
 
     @media @tablet {
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+      width: 95%;
     }
 
     .history-flex {
-      display: flex;
-      flex-direction: column;
-      justify-content: baseline;
-      align-items: center;
       max-width: 1200px;
+      display: flex;
+    }
+
+    .history-details {
+      max-width: 500px;
+      width: 100%;
+      text-align: justify;
+      color: #fefefb;
+      border-radius: 0.3%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
       @media @tablet {
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        max-width: 850px;
+        height: auto;
       }
 
       .history-img {
-        max-width: 400px;
+        width: 100%;
 
         @media @tablet {
-          // padding: 25px;
+          position: absolute;
+          width: 40%;
+          left: 0;
+          min-width: 425px;
         }
         img {
           width: 100%;
-          height: auto;
-          border-radius: 1.5%;
+          // height: auto;
+          border-radius: 0.3%;
         }
       }
 
-      .history-details {
-        max-width: 400px;
-        width: 100%;
-        text-align: justify;
-        padding: 30px;
+      .move {
         background-color: #f0821b;
-        color: #fefefb;
-        border-radius: 1.5%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.3%;
+        padding: 10px;
 
         @media @tablet {
-          // max-width: 500px;
+          align-items: flex-end;
+          width: 70%;
+          padding: 25px;
+        }
+
+        .move-over {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          @media @tablet {
+            width: 68%;
+            padding-bottom: 0;
+          }
         }
 
         h3 {
-          font-size: 1.5rem;
+          font-size: 2.6rem;
           text-align: center;
-          padding-bottom: 15px;
+          font-family: "Fredericka the Great", cursive;
+          padding-bottom: 10px;
+          padding-top: 10px;
 
           @media @tablet {
-            font-size: 1.8rem;
+            font-size: 2.8rem;
           }
           @media @desktop {
-            font-size: 2.2rem;
+            font-size: 3.1rem;
           }
         }
+        div {
+          width: 90%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 20px;
 
-        p {
           @media @tablet {
-            // font-size: 1.5rem;
+            padding-bottom: 0;
           }
-          @media @desktop {
-            font-size: 1.5rem;
+
+          p {
+            font-size: 1.3rem;
+            font-weight: 300;
+
+            @media @tablet {
+              font-size: 1.4rem;
+            }
           }
         }
       }
@@ -219,44 +266,58 @@
 
     @media @tablet {
       flex-direction: row;
-      width: 80%;
     }
 
-    .card {
-      width: 70%;
-      padding-bottom: 25px;
-      max-width: 400px;
+    .card-1 {
       display: flex;
-      // justify-content: flex-start;
-      // align-items: stretch;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
 
       @media @tablet {
-        width: 25%;
-        padding: 20px;
+        flex-direction: row;
       }
 
-      h3 {
-        font-size: 1.6rem;
-        font-family: "Fredericka the Great", cursive;
-        padding-bottom: 15px;
-
-        @media @tablet {
-          font-size: 1.8rem;
-        }
-
-        @media @desktop {
-          font-size: 2.2rem;
-        }
+      @media @desktop {
+        width: 50%;
       }
 
-      p {
+      .card {
+        width: 80%;
+        padding-bottom: 25px;
+        max-width: 400px;
+        display: flex;
+        // justify-content: flex-start;
+        // align-items: stretch;
+        flex-direction: column;
+
         @media @tablet {
-          font-size: 1.3rem;
-          height: 200px;
+          width: 50%;
+          padding: 20px;
+        }
+
+        h3 {
+          font-size: 2.6rem;
+          font-family: "Fredericka the Great", cursive;
+          padding-bottom: 15px;
+
+          @media @tablet {
+            font-size: 2.8rem;
+          }
 
           @media @desktop {
-            font-size: 1.5rem;
+            font-size: 3rem;
+          }
+        }
+
+        p {
+          font-size: 1.3rem;
+          font-weight: 300;
+
+          @media @tablet {
+            font-size: 1.4rem;
+            height: 200px;
           }
         }
       }
@@ -265,6 +326,8 @@
     .icon {
       font-size: 4rem;
       color: #f0821b;
+      padding-bottom: 20px;
+      font-weight: 300;
     }
 
     .card-info {
@@ -275,7 +338,7 @@
 
 /*about sections*/
 .space {
-  height: 100vh;
+  height: 80vh;
   background-color: #f4f5f6;
 
   @media @desktop {
@@ -299,8 +362,16 @@
 
     h1 {
       color: #fff;
-      font-size: 4.8rem;
+      font-size: 5rem;
       font-family: "Fredericka the Great", cursive;
+
+      @media @tablet {
+        font-size: 5.2rem;
+      }
+
+      @media @desktop {
+        font-size: 5.5rem;
+      }
     }
     .about-hero {
       border-radius: 2%;
@@ -336,7 +407,7 @@
         justify-content: center;
         padding: 25px;
         background-color: #fff;
-        color: black;
+        color: rgb(124, 123, 123);
         border-radius: 0.5%;
 
         @media @desktop {
@@ -345,15 +416,18 @@
 
         h2 {
           font-size: 3rem;
+          font-weight: 500;
         }
 
         h4 {
           font-size: 2rem;
           padding: 20px 0;
+          font-weight: 400;
         }
 
         p {
           font-size: 1.6rem;
+          font-weight: 300;
         }
       }
     }
@@ -363,17 +437,25 @@
 .team-main {
   width: 100%;
   background-color: #f4f5f6;
-  color: black;
+  color: rgb(124, 123, 123);
   text-align: center;
   padding-bottom: 100px;
 
-  h2 {
-    font-size: 3rem;
-  }
+  .head {
+    font-size: 4.2rem;
+    font-weight: 500;
+    font-family: "Fredericka the Great", cursive;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    color: #fa8d26;
 
-  h4 {
-    font-size: 2rem;
-    padding-bottom: 2rem;
+    @media @tablet {
+      font-size: 4.4rem;
+    }
+
+    @media @tablet {
+      font-size: 4.6rem;
+    }
   }
 
   .team-row {
@@ -397,15 +479,45 @@
       margin: 2rem auto;
       transition: all 0.35s;
 
-      &:nth-of-type(4n + 1) {
-        transform: rotate(2deg);
-      }
-
       img {
         width: 100%;
         max-width: 100%;
         height: auto;
       }
+
+      h2 {
+        font-size: 3rem;
+        font-family: "Fredericka the Great", cursive;
+        font-weight: 500;
+        padding: 5px;
+        color: #fa8d26;
+
+        @media @desktop {
+          font-size: 3.2rem;
+        }
+      }
+
+      h4 {
+        font-size: 2rem;
+        font-weight: 300;
+        padding: 5px;
+      }
+      p {
+        font-size: 1.3rem;
+        font-weight: 300;
+
+        @media @desktop {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .one {
+      transform: rotate(2deg);
+    }
+
+    .two {
+      transform: rotate(-2deg);
     }
   }
 }
@@ -413,16 +525,20 @@
 .join-main {
   background: #fa8d26;
   color: #fff;
-  padding-bottom: 5.5rem;
-  padding-top: 4rem;
+  padding-bottom: 6.6rem;
+  padding-top: 6.6rem;
   text-align: center;
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    padding: 10px;
+    font-weight: 600;
   }
 
   h4 {
     font-size: 1.6rem;
+    font-weight: 300;
+    padding: 5px;
   }
 
   button {
@@ -441,7 +557,7 @@
 
 /*contact*/
 .space2 {
-  height: 60vh;
+  height: 55vh;
   background-color: #f4f5f6;
 
   @media @desktop {
@@ -454,7 +570,7 @@
 
   .contact-heading {
     width: 100%;
-    height: 55vh;
+    height: 45vh;
     background-color: #fa8d26;
     position: relative;
     display: flex;
@@ -464,17 +580,27 @@
 
     h1 {
       color: #fff;
-      font-size: 4.8rem;
+      font-size: 5rem;
       font-family: "Fredericka the Great", cursive;
+
+      @media @tablet {
+        font-size: 5.3rem;
+      }
     }
 
     div {
       width: 90%;
       max-width: 60rem;
       p {
+        padding-top: 15px;
         font-size: 1.6rem;
         text-align: center;
         color: #fff;
+        font-weight: 100;
+
+        @media @tablet {
+          font-size: 1.7rem;
+        }
       }
     }
 
@@ -504,7 +630,7 @@
 
         label {
           font-size: 1.3rem;
-          font-weight: 700;
+          font-weight: 600;
           letter-spacing: 0.05em;
           margin-bottom: 0.3rem;
           text-transform: uppercase;
