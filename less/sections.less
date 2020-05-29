@@ -16,14 +16,14 @@
 
     .mySlides {
       display: none;
-      padding: 80px 80px 30px 80px;
+      padding: 80px 80px 80px 80px;
       text-align: center;
       max-width: 1200px;
 
       .stars {
         color: #f5db3d;
         font-size: 1.4rem;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
 
         @media @tablet {
           font-size: 1.6rem;
@@ -31,6 +31,10 @@
 
         @media @desktop {
           font-size: 1.7rem;
+        }
+
+        i {
+          padding: 0 6px;
         }
       }
 
@@ -47,7 +51,8 @@
       }
 
       .author {
-        color: cornflowerblue;
+        color: #fa8d26;
+        padding-top: 10px;
         font-size: 1.4rem;
 
         @media @tablet {
@@ -89,6 +94,7 @@
 }
 
 .dot-container {
+  display: none;
   text-align: center;
   padding: 20px 20px 40px 20px;
   background: #fff;
@@ -129,7 +135,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
 
     @media @tablet {
       width: 95%;
@@ -145,7 +150,7 @@
       width: 100%;
       text-align: justify;
       color: #fefefb;
-      border-radius: 1.5%;
+      border-radius: 0.3%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -170,8 +175,8 @@
         }
         img {
           width: 100%;
-          height: auto;
-          border-radius: 1.5%;
+          // height: auto;
+          border-radius: 0.3%;
         }
       }
 
@@ -182,7 +187,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 2%;
+        border-radius: 0.3%;
+        padding: 10px;
 
         @media @tablet {
           align-items: flex-end;
@@ -203,16 +209,17 @@
         }
 
         h3 {
-          font-size: 2.2rem;
+          font-size: 2.6rem;
           text-align: center;
           font-family: "Fredericka the Great", cursive;
           padding-bottom: 10px;
+          padding-top: 10px;
 
           @media @tablet {
-            font-size: 2.4rem;
+            font-size: 2.8rem;
           }
           @media @desktop {
-            font-size: 2.6rem;
+            font-size: 3.1rem;
           }
         }
         div {
@@ -224,6 +231,15 @@
 
           @media @tablet {
             padding-bottom: 0;
+          }
+
+          p {
+            font-size: 1.3rem;
+            font-weight: 300;
+
+            @media @tablet {
+              font-size: 1.4rem;
+            }
           }
         }
       }
@@ -282,27 +298,26 @@
         }
 
         h3 {
-          font-size: 2rem;
+          font-size: 2.6rem;
           font-family: "Fredericka the Great", cursive;
           padding-bottom: 15px;
 
           @media @tablet {
-            font-size: 2.2rem;
+            font-size: 2.8rem;
           }
 
           @media @desktop {
-            font-size: 2.4rem;
+            font-size: 3rem;
           }
         }
 
         p {
+          font-size: 1.3rem;
+          font-weight: 300;
+
           @media @tablet {
             font-size: 1.4rem;
             height: 200px;
-
-            @media @desktop {
-              font-size: 1.5rem;
-            }
           }
         }
       }
@@ -312,6 +327,7 @@
       font-size: 4rem;
       color: #f0821b;
       padding-bottom: 20px;
+      font-weight: 300;
     }
 
     .card-info {
@@ -346,15 +362,23 @@
 
     h1 {
       color: #fff;
-      font-size: 4.8rem;
+      font-size: 5rem;
       font-family: "Fredericka the Great", cursive;
+
+      @media @tablet {
+        font-size: 5.2rem;
+      }
+
+      @media @desktop {
+        font-size: 5.5rem;
+      }
     }
     .about-hero {
       border-radius: 2%;
       width: 90%;
       max-width: 600px;
       position: absolute;
-      top: 70%;
+      top: 80%;
       color: white;
       display: flex;
       flex-direction: column;
@@ -383,7 +407,7 @@
         justify-content: center;
         padding: 25px;
         background-color: #fff;
-        color: black;
+        color: rgb(124, 123, 123);
         border-radius: 0.5%;
 
         @media @desktop {
@@ -392,15 +416,18 @@
 
         h2 {
           font-size: 3rem;
+          font-weight: 500;
         }
 
         h4 {
           font-size: 2rem;
           padding: 20px 0;
+          font-weight: 400;
         }
 
         p {
           font-size: 1.6rem;
+          font-weight: 300;
         }
       }
     }
@@ -410,18 +437,25 @@
 .team-main {
   width: 100%;
   background-color: #f4f5f6;
-  color: black;
+  color: rgb(124, 123, 123);
   text-align: center;
   padding-bottom: 100px;
 
-  h2 {
-    font-size: 4rem;
-  }
+  .head {
+    font-size: 4.2rem;
+    font-weight: 500;
+    font-family: "Fredericka the Great", cursive;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    color: #fa8d26;
 
-  h4 {
-    font-size: 2rem;
-    padding-bottom: 1rem;
-    font-weight: 300;
+    @media @tablet {
+      font-size: 4.4rem;
+    }
+
+    @media @tablet {
+      font-size: 4.6rem;
+    }
   }
 
   .team-row {
@@ -451,11 +485,29 @@
         height: auto;
       }
 
-      p {
-        font-size: 1.5rem;
+      h2 {
+        font-size: 3rem;
+        font-family: "Fredericka the Great", cursive;
+        font-weight: 500;
+        padding: 5px;
+        color: #fa8d26;
 
         @media @desktop {
-          font-size: 1.6rem;
+          font-size: 3.2rem;
+        }
+      }
+
+      h4 {
+        font-size: 2rem;
+        font-weight: 300;
+        padding: 5px;
+      }
+      p {
+        font-size: 1.3rem;
+        font-weight: 300;
+
+        @media @desktop {
+          font-size: 1.5rem;
         }
       }
     }
@@ -473,16 +525,20 @@
 .join-main {
   background: #fa8d26;
   color: #fff;
-  padding-bottom: 5.5rem;
-  padding-top: 4rem;
+  padding-bottom: 6.6rem;
+  padding-top: 6.6rem;
   text-align: center;
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    padding: 10px;
+    font-weight: 600;
   }
 
   h4 {
     font-size: 1.6rem;
+    font-weight: 300;
+    padding: 5px;
   }
 
   button {
@@ -524,8 +580,12 @@
 
     h1 {
       color: #fff;
-      font-size: 4.8rem;
+      font-size: 5rem;
       font-family: "Fredericka the Great", cursive;
+
+      @media @tablet {
+        font-size: 5.3rem;
+      }
     }
 
     div {
@@ -536,6 +596,11 @@
         font-size: 1.6rem;
         text-align: center;
         color: #fff;
+        font-weight: 100;
+
+        @media @tablet {
+          font-size: 1.7rem;
+        }
       }
     }
 
@@ -565,7 +630,7 @@
 
         label {
           font-size: 1.3rem;
-          font-weight: 700;
+          font-weight: 600;
           letter-spacing: 0.05em;
           margin-bottom: 0.3rem;
           text-transform: uppercase;

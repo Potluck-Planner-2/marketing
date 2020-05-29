@@ -30,8 +30,11 @@ p {
 q {
   font-size: 1.4rem;
 }
-h2 {
-  letter-spacing: 3px;
+h1 {
+  font-weight: 500;
+}
+h3 {
+  font-weight: 500;
 }
 /*top nav*/
 .top-nav {
@@ -77,14 +80,14 @@ h2 {
 }
 #reviews .slideshow-container .mySlides {
   display: none;
-  padding: 80px 80px 30px 80px;
+  padding: 80px 80px 80px 80px;
   text-align: center;
   max-width: 1200px;
 }
 #reviews .slideshow-container .mySlides .stars {
   color: #f5db3d;
   font-size: 1.4rem;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 @media (min-width: 800px) {
   #reviews .slideshow-container .mySlides .stars {
@@ -95,6 +98,9 @@ h2 {
   #reviews .slideshow-container .mySlides .stars {
     font-size: 1.7rem;
   }
+}
+#reviews .slideshow-container .mySlides .stars i {
+  padding: 0 6px;
 }
 #reviews .slideshow-container .mySlides q {
   font-style: italic;
@@ -110,7 +116,8 @@ h2 {
   }
 }
 #reviews .slideshow-container .mySlides .author {
-  color: cornflowerblue;
+  color: #fa8d26;
+  padding-top: 10px;
   font-size: 1.4rem;
 }
 @media (min-width: 800px) {
@@ -148,6 +155,7 @@ h2 {
   border-radius: 3px 0 0 3px;
 }
 .dot-container {
+  display: none;
   text-align: center;
   padding: 20px 20px 40px 20px;
   background: #fff;
@@ -186,7 +194,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
 }
 @media (min-width: 800px) {
   #history .history-container {
@@ -202,7 +209,7 @@ h2 {
   width: 100%;
   text-align: justify;
   color: #fefefb;
-  border-radius: 1.5%;
+  border-radius: 0.3%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,8 +237,7 @@ h2 {
 }
 #history .history-container .history-details .history-img img {
   width: 100%;
-  height: auto;
-  border-radius: 1.5%;
+  border-radius: 0.3%;
 }
 #history .history-container .history-details .move {
   background-color: #f0821b;
@@ -240,7 +246,8 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 2%;
+  border-radius: 0.3%;
+  padding: 10px;
 }
 @media (min-width: 800px) {
   #history .history-container .history-details .move {
@@ -262,19 +269,20 @@ h2 {
   }
 }
 #history .history-container .history-details .move h3 {
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   text-align: center;
   font-family: "Fredericka the Great", cursive;
   padding-bottom: 10px;
+  padding-top: 10px;
 }
 @media (min-width: 800px) {
   #history .history-container .history-details .move h3 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 }
 @media (min-width: 1000px) {
   #history .history-container .history-details .move h3 {
-    font-size: 2.6rem;
+    font-size: 3.1rem;
   }
 }
 #history .history-container .history-details .move div {
@@ -287,6 +295,15 @@ h2 {
 @media (min-width: 800px) {
   #history .history-container .history-details .move div {
     padding-bottom: 0;
+  }
+}
+#history .history-container .history-details .move div p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+@media (min-width: 800px) {
+  #history .history-container .history-details .move div p {
+    font-size: 1.4rem;
   }
 }
 /*features*/
@@ -342,19 +359,23 @@ h2 {
   }
 }
 #features .features .card-1 .card h3 {
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-family: "Fredericka the Great", cursive;
   padding-bottom: 15px;
 }
 @media (min-width: 800px) {
   #features .features .card-1 .card h3 {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
   }
 }
 @media (min-width: 1000px) {
   #features .features .card-1 .card h3 {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
+}
+#features .features .card-1 .card p {
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 @media (min-width: 800px) {
   #features .features .card-1 .card p {
@@ -362,15 +383,11 @@ h2 {
     height: 200px;
   }
 }
-@media (min-width: 800px) and (min-width: 1000px) {
-  #features .features .card-1 .card p {
-    font-size: 1.5rem;
-  }
-}
 #features .features .icon {
   font-size: 4rem;
   color: #f0821b;
   padding-bottom: 20px;
+  font-weight: 300;
 }
 #features .features .card-info {
   text-align: justify;
@@ -399,15 +416,25 @@ h2 {
 }
 .about-main .about-bcg h1 {
   color: #fff;
-  font-size: 4.8rem;
+  font-size: 5rem;
   font-family: "Fredericka the Great", cursive;
+}
+@media (min-width: 800px) {
+  .about-main .about-bcg h1 {
+    font-size: 5.2rem;
+  }
+}
+@media (min-width: 1000px) {
+  .about-main .about-bcg h1 {
+    font-size: 5.5rem;
+  }
 }
 .about-main .about-bcg .about-hero {
   border-radius: 2%;
   width: 90%;
   max-width: 600px;
   position: absolute;
-  top: 70%;
+  top: 80%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -437,7 +464,7 @@ h2 {
   justify-content: center;
   padding: 25px;
   background-color: #fff;
-  color: black;
+  color: #7c7b7b;
   border-radius: 0.5%;
 }
 @media (min-width: 1000px) {
@@ -447,28 +474,41 @@ h2 {
 }
 .about-main .about-bcg .about-hero .ab-info h2 {
   font-size: 3rem;
+  font-weight: 500;
 }
 .about-main .about-bcg .about-hero .ab-info h4 {
   font-size: 2rem;
   padding: 20px 0;
+  font-weight: 400;
 }
 .about-main .about-bcg .about-hero .ab-info p {
   font-size: 1.6rem;
+  font-weight: 300;
 }
 .team-main {
   width: 100%;
   background-color: #f4f5f6;
-  color: black;
+  color: #7c7b7b;
   text-align: center;
   padding-bottom: 100px;
 }
-.team-main h2 {
-  font-size: 4rem;
+.team-main .head {
+  font-size: 4.2rem;
+  font-weight: 500;
+  font-family: "Fredericka the Great", cursive;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  color: #fa8d26;
 }
-.team-main h4 {
-  font-size: 2rem;
-  padding-bottom: 1rem;
-  font-weight: 300;
+@media (min-width: 800px) {
+  .team-main .head {
+    font-size: 4.4rem;
+  }
+}
+@media (min-width: 800px) {
+  .team-main .head {
+    font-size: 4.6rem;
+  }
 }
 .team-main .team-row {
   display: flex;
@@ -497,12 +537,30 @@ h2 {
   max-width: 100%;
   height: auto;
 }
+.team-main .team-row .team-card h2 {
+  font-size: 3rem;
+  font-family: "Fredericka the Great", cursive;
+  font-weight: 500;
+  padding: 5px;
+  color: #fa8d26;
+}
+@media (min-width: 1000px) {
+  .team-main .team-row .team-card h2 {
+    font-size: 3.2rem;
+  }
+}
+.team-main .team-row .team-card h4 {
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 5px;
+}
 .team-main .team-row .team-card p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 @media (min-width: 1000px) {
   .team-main .team-row .team-card p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 .team-main .team-row .one {
@@ -514,15 +572,19 @@ h2 {
 .join-main {
   background: #fa8d26;
   color: #fff;
-  padding-bottom: 5.5rem;
-  padding-top: 4rem;
+  padding-bottom: 6.6rem;
+  padding-top: 6.6rem;
   text-align: center;
 }
 .join-main h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  padding: 10px;
+  font-weight: 600;
 }
 .join-main h4 {
   font-size: 1.6rem;
+  font-weight: 300;
+  padding: 5px;
 }
 .join-main button {
   margin-top: 10px;
@@ -561,8 +623,13 @@ h2 {
 }
 .contact-main .contact-heading h1 {
   color: #fff;
-  font-size: 4.8rem;
+  font-size: 5rem;
   font-family: "Fredericka the Great", cursive;
+}
+@media (min-width: 800px) {
+  .contact-main .contact-heading h1 {
+    font-size: 5.3rem;
+  }
 }
 .contact-main .contact-heading div {
   width: 90%;
@@ -573,6 +640,12 @@ h2 {
   font-size: 1.6rem;
   text-align: center;
   color: #fff;
+  font-weight: 100;
+}
+@media (min-width: 800px) {
+  .contact-main .contact-heading div p {
+    font-size: 1.7rem;
+  }
 }
 .contact-main .contact-heading .some-form {
   border-radius: 2%;
@@ -601,7 +674,7 @@ h2 {
 }
 .contact-main .contact-heading .some-form .field-text label {
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.05em;
   margin-bottom: 0.3rem;
   text-transform: uppercase;
@@ -726,6 +799,7 @@ h2 {
 #footer .play .play-container h2 {
   font-size: 2rem;
   padding-top: 15px;
+  font-weight: 500;
 }
 @media (min-width: 800px) {
   #footer .play .play-container h2 {
@@ -782,6 +856,7 @@ h2 {
 #footer .footer-container div .social h4 {
   font-size: 1.6rem;
   font-weight: 400;
+  padding-bottom: 5px;
 }
 @media (min-width: 800px) {
   #footer .footer-container div .social h4 {
@@ -826,6 +901,7 @@ h2 {
 #footer .footer-container .footer-nav h4 {
   font-size: 1.6rem;
   font-weight: 400;
+  padding-bottom: 5px;
 }
 @media (min-width: 800px) {
   #footer .footer-container .footer-nav h4 {
@@ -850,6 +926,9 @@ h2 {
 }
 #footer .footer-container .footer-nav li {
   font-size: 1.2rem;
+  padding-top: 5px;
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 @media (min-width: 800px) {
   #footer .footer-container .footer-nav li {
@@ -861,6 +940,7 @@ h2 {
   color: #b9b8b8;
   text-align: center;
   font-size: 1.2rem;
+  padding: 15px;
 }
 @media (min-width: 800px) {
   .copyright {
@@ -891,17 +971,18 @@ h2 {
   color: #fefefb;
   padding-bottom: 10px;
   text-align: center;
-  letter-spacing: 3px;
-  font-size: 6rem;
+  letter-spacing: 4px;
+  font-size: 5.9rem;
+  font-weight: 400;
 }
 @media (min-width: 800px) {
   .bcg h1 {
-    font-size: 6.2rem;
+    font-size: 6.1rem;
   }
 }
 @media (min-width: 1000px) {
   .bcg h1 {
-    font-size: 5.9rem;
+    font-size: 6.2rem;
   }
 }
 .bcg hr {
@@ -915,21 +996,15 @@ h2 {
   padding-bottom: 25px;
   padding-top: 10px;
   text-align: center;
-  line-height: 2rem;
-  font-size: 1.3rem;
-  font-weight: 400;
-}
-@media (min-width: 800px) {
-  .bcg h2 {
-    font-size: 1.4rem;
-    line-height: 2.2rem;
-  }
+  line-height: 2.2rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+  letter-spacing: 3px;
 }
 @media (min-width: 1000px) {
   .bcg h2 {
     font-size: 1.6rem;
     line-height: 2.4rem;
-    font-weight: 300;
   }
 }
 .bcg button {
